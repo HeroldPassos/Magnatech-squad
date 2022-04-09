@@ -90,17 +90,14 @@ body{
     color: #FFFFFF;
     font-size: 18px;
     padding: 10px 15px;
-    transition-delay: 1,5s;
+    transition: 1s;
     
 }
 .btn:hover{
  background-color: #f44e2d;
- 
-}
-.btn:active{
-    transform:scale(2.5);
-    transition-delay: 1.5s;
-
+ -webkit-trasnform: scale (1.5);
+ -ms-transform: scale (1.5);
+ transform: scale (1.5);
 }
 
 input{
