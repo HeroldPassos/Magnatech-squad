@@ -1,0 +1,83 @@
+.body{
+    margin: 0px ;
+    font-family: monospace;
+    background-color: rgb(216, 212, 212) ;
+}
+
+.header {
+    background-color: rgb(172, 5, 5);
+    height: 100px;
+    border: black 10px d;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: center;
+    margin-left: 0%;
+
+
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.titulo {
+    margin-left: 80px;
+    color: #ffffff;
+}
+
+.header .container {
+
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.navbar{
+    width: 500px;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    padding-right: 0px;
+    font-weight: 600;
+    }
+
+    /* inicio banner */
+
+    .banner{ height: 500px;
+        background-image: url("");
+        background-size: cover;
+        margin-top: 0px;
+    }
+    
+.rodape {
+    background-color: rgb(172, 5, 5);
+    height: 100px;
+}
+
+.botao {
+    background-color: white;
+    border-radius: 20px;
+    height: 60px;
+    width: 150px;
+    border: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+    color: rgb(172, 5, 5);
+    font-weight: bolder;
+    margin-left: 110px;
+}
+.usuario{ 
+    width: 120px;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    padding-right: 0px;
+}
