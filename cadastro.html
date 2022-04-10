@@ -7,41 +7,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acquatec Login</title>
-    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="Estilo/layout.css">
 </head>
 
 <body>
+ 
     <div class="header">
-        <div class="container">
-            <a class="icone-logo" href="index.html">
-                <img src="imgs/Logo-magna.png" width="70px" class="Logo-magna" onclick="direcionar()">
-                Magnatech
-            </a>
-            <ul class="navbar">
-                <li><a class="nav-item" href="index.html">Home</a></li>
-                <li><a class="nav-item">Sobre Nós</a></li>
-                <li><a class="nav-item" href="login.html">Login</a></li>
-                <li><a class="nav-item">Cadastro</a></li>
-                <li><a class="nav-item">Suporte</a></li>
-            </ul>
+      <div class="container">
+        <a class="icone-logo" href="index.html">
+          <img src="imgs/Logo-magna.png" width="70px" class="Logo-magna" href="index.html">
+          Magnatech
+      </a>
+      
+        <ul class="navbar">
+          <li> <a href="">Sobre nós</a> </li>
+          <li> <a href="">Parceiros</a> </li>
+          <li> <a href="">Trabalhe Conosco</a> </li>
+          <li> <a href="">Suporte</a></li>
+        </ul>
+        <button class="botao" href="calculadora.html" >Simulador Financeiro</button>
+  
+        <div class="login">
+          <ul class="usuario">
+            <li> <a href="login.html">Login</a>  &nbsp; |</li>
+            <li> <a href="cadastro.html">Cadastro</a> </li>
+          </ul>
         </div>
-    </div>
-
-    <div class="banner">
-        <div class="container">
-            <div class="card">
-                <h1>Realize seu cadastro! </h1>
-                
-                <h4>Email</h4> <input type="text" id="in_email" placeholder="Insira seu Email">
-
-                <h4>Senha</h4> <input type="password" id="in_password" placeholder="insira Uma senha">
-
-                
-                <button class="btn" onclick="funcao()">Entrar</button>
-            
-            </div>
-        </div>
-    </div>
+      </div>
 </body>
 
 </html>
