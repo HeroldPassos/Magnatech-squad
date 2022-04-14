@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,111 +8,128 @@
     <link rel="stylesheet" href="Estilo/layout.css">
     <title>Simulador Financeiro</title>
 </head>
-<body>
-    <body>
- 
-        <div class="header">
-          <div class="container">
-            <a class="icone-logo" href="index.html">
-              <img src="imgs/Logo-magna.png" width="70px" class="Logo-magna" href="index.html">
-              Magnatech
-          </a>
-          
-            <ul class="navbar">
-              <li> <a href="">Sobre nós</a> </li>
-              <li> <a href="">Parceiros</a> </li>
-              <li> <a href="">Trabalhe Conosco</a> </li>
-              <li> <a href="">Suporte</a></li>
-            </ul>
-            <button class="botao" href="calculadora.html" >Simulador Financeiro</button>
-      
-            <div class="login">
-              <ul class="usuario">
-                <li> <a href="login.html">Login</a>  &nbsp; |</li>
-                <li> <a href="cadastro.html">Cadastro</a> </li>
-              </ul>
-            </div>
-          </div>
-          <div class="banner">
-            <div class="container">
-                <div class="calculadora1">
-                <h2>CALCULADORA FINANCEIRA</h2>
 
-                <p>Segundo dados da ONU Verde, no Brasil, cerca de 10% do desperdício de alimentos ocorre logo durante sua produção e colheita, desperdício este que, <br>
-                segundo os Objetivos de Desenvolvimento Sustentável (ODS) da ONU deve ser reduzido pela metade até 2030. </p>
-            
-                <p>Embora já seja comum o uso de sensores para o monitoramento de produtos armazenados, nós da MagnaTech enxergamos que o monitoramento das condições <br>
-                do ambiente durante o período de crescimento da planta também é de extrema importância, visto que um crescimento mais saudável da planta auxiliaria <br>
-                consideravelmente em sua vida útil e potencial nutritivo. </p>
-            
-                <p>Considerando esses dois pontos e buscando facilitar a visualização dos mesmos, nós disponibilizamos um simulador que mostra o desperdício atual da colheita <br>
-                e o quanto este desperdício pode ser reduzido com o uso de nossos sensores de monitoramento e um sistema de controle de temperatura e umidade integrado a eles. </p>
-            </div>
-                <div class="card">
-            
-                    <p>
-                        Informe a unidade de medida utilizada:
-                        <select id="sel_medida" onchange="escolheMedida()">
-                            <option value="1">Quilogramas (1kg)</option>
-                            <option value="15">Arrobas (15kg)</option>
-                            <option value="60">Sacas (60kg)</option>
-                            <option value="1000">Toneladas (1000kg)</option>
-                        </select>
-                    </p>
-            
-                    <p>
-                        Informe a quantidade média produzida por mês (considerando também o que é descartado): <br>
-                        <input placeholder="Quilogramas produzidos" id="in_producao">
-                    </p>
-            
-                    <p>
-                        Informe o valor médio por mês que é obtido pela empresa, em reais: <br>
-                        <input placeholder="Venda" id="in_venda">
-                    </p>
-            
-                    <p>
-                        Informe a quantidade perdida durante o plantio (em %): <br>
-                        <input placeholder="Desperdício" id="in_desperdicio">
-                    </p>
-            
-                    <button onclick="resultado()">Ver resultado</button>
-            
-                    <div id="div_desperdicio" style="display: none;">
-                        
-                        <p>Seu desperdício médio mensal é de <b id="b_desperdicio_venda"></b> e, com isso, sua empresa <br>
-                        acaba perdendo cerca de <b id="b_desperdicio_dinheiro"></b> dos <b id="b_total_dinheiro"></b> que poderia lucrar.</p>
-                        
-                        <p style="font-weight: bold;">Agora calcule como seria com um monitoramento em sua plantação:</p>
-            
-                        <p>
-                            Informe o tamanho da área de plantio, em m²: <br>
-                            <input placeholder="Área" id="in_area">
-                        </p>
-            
-                        <button onclick="calculo()">Calcular</button>
-            
-                    </div>
-                    <div id="div_calculo" style="display: none;">
-            
-                        <p>
-                            Ao aderir à um sistema de monitoramento adequado, haveria um diminuição de cerca de <b id="b_taxa_economia"></b> na taxa de alimentos desperdiçados, <br>
-                            gerando <b id="b_lucro_total"></b>, um aumento de <b id="b_lucro_parcial"></b> quando comparado ao valor atual das vendas
-                        </p>
-                        <p>
-                            Tudo isso sendo necessária apenas a instalação de <b id="b_sensores"></b> sensores, trazendo um custo de apenas <b id="b_sensores_custo"></b> de equipamentos para o monitoramento <br>
-                            da temperatura e umidade.
-                        </p>
-            
-                    </div>
-            
+<body>
+
+    <body>
+
+        <div class="header">
+            <div class="container">
+                <a class="icone-logo" href="index.html">
+                    <img src="imgs/Logo-magna.png" width="70px" class="Logo-magna" href="index.html">
+                    Magnatech
+                </a>
+
+                <ul class="navbar">
+                    <li> <a href="index.html">Home</a> </li>
+                    <li> <a href="">Sobre nós</a> </li>
+                    <li> <a href="">Parceiros</a> </li>
+                    <li> <a href="">Trabalhe Conosco</a> </li>
+                    <li> <a href="">Suporte</a></li>
+                </ul>
+                <button class="botao" href="calculadora.html">Simulador Financeiro</button>
+
+                <div class="login">
+                    <ul class="usuario">
+                        <li> <a href="login.html">Login</a> &nbsp; |</li>
+                        <li> <a href="cadastro.html">Cadastro</a> </li>
+                    </ul>
                 </div>
-                
-              </div>
             </div>
-          </div>
-    
-    
-</body>
+            <div class="banner">
+                <div class="container">
+                    <div class="calculadora1">
+                        <h2>CALCULADORA FINANCEIRA</h2>
+
+                        <p>Segundo dados da ONU Verde, no Brasil, cerca de 10% do desperdício de alimentos ocorre logo
+                            durante sua produção e colheita, desperdício este que, <br>
+                            segundo os Objetivos de Desenvolvimento Sustentável (ODS) da ONU deve ser reduzido pela
+                            metade até 2030. </p>
+
+                        <p>Embora já seja comum o uso de sensores para o monitoramento de produtos armazenados, nós da
+                            MagnaTech enxergamos que o monitoramento das condições <br>
+                            do ambiente durante o período de crescimento da planta também é de extrema importância,
+                            visto que um crescimento mais saudável da planta auxiliaria <br>
+                            consideravelmente em sua vida útil e potencial nutritivo. </p>
+
+                        <p>Considerando esses dois pontos e buscando facilitar a visualização dos mesmos, nós
+                            disponibilizamos um simulador que mostra o desperdício atual da colheita <br>
+                            e o quanto este desperdício pode ser reduzido com o uso de nossos sensores de monitoramento
+                            e um sistema de controle de temperatura e umidade integrado a eles. </p>
+                    </div>
+                    <div class="calculadora">
+
+                        <p>
+                            Informe a unidade de medida utilizada:
+                            <select id="sel_medida" onchange="escolheMedida()">
+                                <option value="1">Quilogramas (1kg)</option>
+                                <option value="15">Arrobas (15kg)</option>
+                                <option value="60">Sacas (60kg)</option>
+                                <option value="1000">Toneladas (1000kg)</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            Informe a quantidade média produzida por mês (considerando também o que é descartado): <br>
+                            <input placeholder="Quilogramas produzidos" id="in_producao">
+                        </p>
+
+                        <p>
+                            Informe o valor médio por mês que é obtido pela empresa, em reais: <br>
+                            <input placeholder="Venda" id="in_venda">
+                        </p>
+
+                        <p>
+                            Informe a quantidade perdida durante o plantio (em %): <br>
+                            <input placeholder="Desperdício" id="in_desperdicio">
+                        </p>
+
+                        <button onclick="resultado()">Ver resultado</button>
+
+                        <div id="div_desperdicio" style="display: none;">
+
+                            <p>Seu desperdício médio mensal é de <b id="b_desperdicio_venda"></b> e, com isso, sua
+                                empresa <br>
+                                acaba perdendo cerca de <b id="b_desperdicio_dinheiro"></b> dos <b
+                                    id="b_total_dinheiro"></b> que poderia lucrar.</p>
+
+                            <p style="font-weight: bold;">Agora calcule como seria com um monitoramento em sua
+                                plantação:</p>
+
+                            <p>
+                                Informe o tamanho da área de plantio, em m²: <br>
+                                <input placeholder="Área" id="in_area">
+                            </p>
+
+                            <button onclick="calculo()">Calcular</button>
+
+                        </div>
+                        <div id="div_calculo" style="display: none;">
+
+                            <p>
+                                Ao aderir à um sistema de monitoramento adequado, haveria um diminuição de cerca de <b
+                                    id="b_taxa_economia"></b> na taxa de alimentos desperdiçados, <br>
+                                gerando <b id="b_lucro_total"></b>, um aumento de <b id="b_lucro_parcial"></b> quando
+                                comparado ao valor atual das vendas
+                            </p>
+                            <p>
+                                Tudo isso sendo necessária apenas a instalação de <b id="b_sensores"></b> sensores,
+                                trazendo um custo de apenas <b id="b_sensores_custo"></b> de equipamentos para o
+                                monitoramento <br>
+                                da temperatura e umidade.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
 </html>
 
 <script>
@@ -128,16 +146,16 @@
 
         medida = Number(sel_medida.value)
 
-        if (medida == 1){
+        if (medida == 1) {
             medida_nome = "Quilogramas"
         }
-        if (medida == 15){
+        if (medida == 15) {
             medida_nome = "Arrobas"
         }
-        if (medida == 60){
+        if (medida == 60) {
             medida_nome = "Sacas"
         }
-        if (medida == 1000){
+        if (medida == 1000) {
             medida_nome = "Toneladas"
         }
 
@@ -147,9 +165,9 @@
 
     function resultado() {
 
-        
+
         if (Number(in_desperdicio.value) < 100 && Number(in_desperdicio.value) >= 0 && Number(in_producao.value) > 0 && Number(in_venda.value) > 0) {
-            
+
             desperdicio = Number(in_desperdicio.value) / 100
             producao = Number(in_producao.value)
             venda = Math.round(Number(in_venda.value))

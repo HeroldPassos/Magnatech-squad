@@ -1,39 +1,58 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acquatec Login</title>
-    <link rel="stylesheet" href="Estilo/layout.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acquatec Login</title>
+  <link rel="stylesheet" href="Estilo/layout.css">
 </head>
 
 <body>
- 
-    <div class="header">
-      <div class="container">
-        <a class="icone-logo" href="index.html">
-          <img src="imgs/Logo-magna.png" width="70px" class="Logo-magna" href="index.html">
-          Magnatech
+
+  <div class="header">
+    <div class="container">
+      <a class="icone-logo" href="index.html">
+        <img src="imgs/Logo-magna.png" width="70px" class="Logo-magna" href="index.html">
+        Magnatech
       </a>
-      
-        <ul class="navbar">
-          <li> <a href="">Sobre nós</a> </li>
-          <li> <a href="">Parceiros</a> </li>
-          <li> <a href="">Trabalhe Conosco</a> </li>
-          <li> <a href="">Suporte</a></li>
+
+      <ul class="navbar">
+        <li> <a href="index.html">Home</a> </li>
+        <li> <a href="">Sobre nós</a> </li>
+        <li> <a href="">Parceiros</a> </li>
+        <li> <a href="">Trabalhe Conosco</a> </li>
+        <li> <a href="">Suporte</a></li>
+      </ul>
+      <button class="botao"><a href="calculadora.html">Simulador Financeiro</a> </button>
+
+      <div class="login">
+        <ul class="usuario">
+          <li> <a href="login.html">Login</a> &nbsp; |</li>
+          <li> <a href="cadastro.html">Cadastro</a> </li>
         </ul>
-        <button class="botao" href="calculadora.html" >Simulador Financeiro</button>
-  
-        <div class="login">
-          <ul class="usuario">
-            <li> <a href="login.html">Login</a>  &nbsp; |</li>
-            <li> <a href="cadastro.html">Cadastro</a> </li>
-          </ul>
+      </div>
+    </div>
+    <!-- termino da header -->
+
+    <!-- começo dp banner -->
+    <div class="banner">
+      <div class="container">
+        <div class="card">
+          <p>
+            <h2>Realize seu cadastro!</h2>
+            <h4>Login</h4> <input type="text" id="in_login" placeholder="Insira um Login válido">
+            <h4>Senha</h4> <input type="password" id="in_password" placeholder="Insira uma Senha">
+            <h4>Email</h4> <input type="text" id="in_email1" placeholder="Insira um Email">
+            <h4>Confirme o Email</h4> <input type="text" id="in_email2" placeholder="Insira um Email">
+            
+            <button class="btn" onclick="funcao()">Entrar</button>
+
+          </p>
         </div>
       </div>
+    </div>
 </body>
 
 </html>
