@@ -48,129 +48,124 @@
 	<div class="banner">
 		<div class="container">
 			<div class="card">
-					<div class="dash-header">
-						<div class="btn-dash">
-							<button onclick="shimeji()" class="btn-chart">Shimeji</button>
-							<button onclick="champion()" class="btn-chart">Champion</button>
-							<button onclick="trufa()" class="btn-chart">Trufa</button>
-							<button onclick="ostra()" class="btn-chart">Ostra-Rosa</button>
-							<button onclick="shitake()" class="btn-chart">Shitake</button>
+				<div class="dash-header">
+					<div class="btn-dash">
+						<button onclick="shimeji()" class="btn-chart">Shimeji</button>
+						<button onclick="champignon()" class="btn-chart">Champignon</button>
+						<button onclick="trufa()" class="btn-chart">Trufa</button>
+						<button onclick="ostra()" class="btn-chart">Ostra-Rosa</button>
+						<button onclick="shitake()" class="btn-chart">Shitake</button>
+					</div>
+					
+					<!-- começo do Shimeji -->
+					<div id="div_shimeji" style="display:block;">
 
-						</div>
+						<h1>Shimeji</h1>
+						<section>
+							<h3>Sensores</h3>
+							<canvas id="sensores"></canvas>
+						</section>
+						<section>
+							<h3> Umidade</h3>
+							<canvas id="Umidade"></canvas>
+						</section>
+						<section>
+							<h3>Temperatura</h3>
+							<canvas id="Temperatura"></canvas>
+						</section>
 
+					</div>
+					
+					<!-- final do Shimeji -->
+
+					<!-- começo do Champignon  -->
+					<div id="div_champignon" style="display:none;">
 						
-							<!-- começo shimeji -->
-							<div id="div_shimeji" style="display:block;">
-								
-									<h1>Shimeji</h1>
-									<section>
-										<h3>Sensores</h3>
-										<canvas id="sensores"></canvas>
-									</section>
-									<section>
-										<h3> Umidade</h3>
-										<canvas id="Umidade"></canvas>
-									</section>
-									<section>
-										<h3>Temperatura</h3>
-										<canvas id="Temperatura"></canvas>
-									</section>
-								</div>
-							
-							<!-- final de shimeji -->
+						<h1>Champignon</h1>
+						<section>
+							<h3>Sensores</h3>
+							<canvas id="champignonSensores"></canvas>
+						</section>
+					
+						<section>
+							<h3> Umidade</h3>
+							<canvas  id="champignonUmidade"></canvas>
+						</section>
+						<section>
+							<h3>Temperatura</h3>
+							<canvas  id="champignonTemperatura"></canvas>
+						</section>
 
-							<!-- começo de champion  -->
-							<div id="div_champion" style="display:none;">
-								
-									<h1>Champion</h1>
-									<section>
-										<h3>Sensores</h3>
-										<div class="graphic"> <!-- exemplo -->
-											<canvas id="championSensores"></canvas>
-										</div>
-									</section>
-								
-									<section>
-										<h3> Umidade</h3>
-										<canvas  id="championUmidade"></canvas>
-									</section>
-									<section>
-										<h3>Temperatura</h3>
-										<canvas  id="championTemperatura"></canvas>
-									</section>
-								</div>
-							
-							<!-- final do Champion -->
+					</div>
+					
+					<!-- final do Champignon -->
 
-							<!-- Começo da Trufa -->
-							<div id="div_trufa" style="display:none;">
-								
-									<h1>Trufa</h1>
-									<section>
-										<h3>Sensores</h3>
-										<canvas id="trufaSensores"></canvas>
-									</section>
-									<section>
-										<h3> Umidade</h3>
-										<canvas id="trufaUmidade"></canvas>
-									</section>
-									<section>
-										<h3>Temperatura</h3>
-										<canvas id="trufaTemperatura"></canvas>
-									</section>
-								
-							</div>
-							<!-- final da Trufa -->
-
-							<!-- começo da Ostra -->
-							<div id="div_ostra" style="display:none;">
-								
-									<h1>Ostra</h1>
-									<section>
-										<h3>Sensores</h3>
-										<canvas id="ostraSensores"></canvas>
-									</section>
-									<section>
-										<h3> Umidade</h3>
-										<canvas id="ostraUmidade"></canvas>
-									</section>
-									<section>
-										<h3>Temperatura</h3>
-										<canvas id="ostraTemperatura"></canvas>
-									</section>
-								
-							</div>
-							<!-- final da Ostra -->
-
-							<!-- comedo do shitake -->
-							<div id="div_shitake" style="display:none;">
-								
-									<h1>Shitake</h1>
-									<section>
-										<h3>Sensores</h3>
-										<canvas class="graphic" id="shitakeSensores"></canvas>
-									</section>
-									<section>
-										<h3> Umidade</h3>
-										<canvas class="graphic" id="shitakeUmidade"></canvas>
-									</section>
-									<section>
-										<h3>Temperatura</h3>
-										<canvas class="graphic" id="shitakeTemperatura"></canvas>
-									</section>
-								
-							</div>
-							<!-- Final do shitake -->
+					<!-- começo da Trufa -->
+					<div id="div_trufa" style="display:none;">
+						
+						<h1>Trufa</h1>
+						<section>
+							<h3>Sensores</h3>
+							<canvas id="trufaSensores"></canvas>
+						</section>
+						<section>
+							<h3> Umidade</h3>
+							<canvas id="trufaUmidade"></canvas>
+						</section>
+						<section>
+							<h3>Temperatura</h3>
+							<canvas id="trufaTemperatura"></canvas>
+						</section>
 						
 					</div>
+					<!-- final da Trufa -->
 
+					<!-- começo da Ostra -->
+					<div id="div_ostra" style="display:none;">
+						
+						<h1>Ostra</h1>
+						<section>
+							<h3>Sensores</h3>
+							<canvas id="ostraSensores"></canvas>
+						</section>
+						<section>
+							<h3> Umidade</h3>
+							<canvas id="ostraUmidade"></canvas>
+						</section>
+						<section>
+							<h3>Temperatura</h3>
+							<canvas id="ostraTemperatura"></canvas>
+						</section>
+						
+					</div>
+					<!-- final da Ostra -->
 
+					<!-- começo do Shitake -->
+					<div id="div_shitake" style="display:none;">
+						
+						<h1>Shitake</h1>
+						<section>
+							<h3>Sensores</h3>
+							<canvas id="shitakeSensores"></canvas>
+						</section>
+						<section>
+							<h3> Umidade</h3>
+							<canvas id="shitakeUmidade"></canvas>
+						</section>
+						<section>
+							<h3>Temperatura</h3>
+							<canvas id="shitakeTemperatura"></canvas>
+						</section>
+						
+					</div>
+					<!-- final do Shitake -->
+					
 				</div>
 			</div>
-			</p>
 		</div>
 	</div>
-	</div>
+
+
 
 	<!-- Fim Banner -->
 
@@ -190,96 +185,95 @@
 
 <script>
 	function shimeji() {
-
 		div_shimeji.style.display = 'block'
-		div_champion.style.display = 'none'
+		div_champignon.style.display = 'none'
 		div_trufa.style.display = 'none'
 		div_ostra.style.display = 'none'
 		div_shitake.style.display = 'none'
 	}
-	function champion() {
+	function champignon() {
 		div_shimeji.style.display = 'none'
-		div_champion.style.display = 'block'
+		div_champignon.style.display = 'block'
 		div_trufa.style.display = 'none'
 		div_ostra.style.display = 'none'
 		div_shitake.style.display = 'none'
 	}
 	function trufa() {
 		div_shimeji.style.display = 'none'
-		div_champion.style.display = 'none'
+		div_champignon.style.display = 'none'
 		div_trufa.style.display = 'block'
 		div_ostra.style.display = 'none'
 		div_shitake.style.display = 'none'
 	}
 	function ostra() {
 		div_shimeji.style.display = 'none'
-		div_champion.style.display = 'none'
+		div_champignon.style.display = 'none'
 		div_trufa.style.display = 'none'
 		div_ostra.style.display = 'block'
 		div_shitake.style.display = 'none'
 	}
 	function shitake() {
 		div_shimeji.style.display = 'none'
-		div_champion.style.display = 'none'
+		div_champignon.style.display = 'none'
 		div_trufa.style.display = 'none'
 		div_ostra.style.display = 'none'
 		div_shitake.style.display = 'block'
 	}
 </script>
 
-<!-- SHITAKE -->
-
 <script>
-
-	/* Umidade  */
-	const labels = [
+	const labels_horas = [
 		'12:00',
 		'13:00',
 		'14:00',
 		'15:00',
 		'16:00',
-		'17:00',
+		'17:00'
 	];
-	const data = {
-		labels: labels,
+	const labels_meses = [
+		'Janeiro',
+		'Fevereiro',
+		'Março',
+		'Abril',
+		'Maio',
+		'Junho'
+	];
+</script>
+
+<!-- SHIMEJI -->
+
+<script>
+
+	// Umidade
+
+	const data0 = {
+		labels: labels_horas,
 		datasets: [{
 			label: 'Umidade',
-			backgroundColor: '#24202000',
+			backgroundColor: 'transparent',
 			borderColor: '#0774ea',
 			data: [55, 30, 97, 60, 30, 55],
 		}]
 	};
 
-	const config = {
+	const config0 = {
 		type: 'line',
-		data: data,
-		options: { maintainAspectRatio: false }
+		data: data0,
 	};
-</script>
 
-<script>
-	const myChart = new Chart(
+	const myChart0 = new Chart(
 		document.getElementById('Umidade'),
-		config
+		config0
 	);
-</script>
 
-<!-- Temperatura -->
-<script>
-	const labels1 = [
-		'12:00',
-		'13:00',
-		'14:00',
-		'15:00',
-		'16:00',
-		'17:00',
-	];
+	// Temperatura
+
 	const data1 = {
-		labels: labels1,
+		labels: labels_horas,
 		datasets: [{
 			label: 'Temperatura',
-			backgroundColor: '#24202000',
-			borderColor: 'rgb(255, 99, 132)',
+			backgroundColor: 'transparent',
+			borderColor: '#ff6384',
 			data: [35, 15, 19, 24, 29, 23]
 		}]
 	};
@@ -287,38 +281,22 @@
 	const config1 = {
 		type: 'line',
 		data: data1,
-		options: {
-			maintainAspectRatio: false
-		}
+		
 	};
-</script>
 
-<script>
 	const myChart1 = new Chart(
 		document.getElementById('Temperatura'),
 		config1
 	);
-</script>
 
-
-
-<!-- sensores -->
-<script>
-	const labels2 = [
-		'Janeiro',
-		'Fevereiro',
-		'Março',
-		'Abril',
-		'Maio',
-		'Junho',
-	];
+	// Sensores
 
 	const data2 = {
-		labels: labels2,
+		labels: labels_meses,
 		datasets: [{
 			label: 'Temperatura',
-			backgroundColor: 'rgb(255, 99, 132)',
-			borderColor: 'rgb(255, 99, 132)',
+			backgroundColor: '#ff6384',
+			borderColor: '#ff6384',
 			data: [35, 15, 19, 24, 29, 23]
 
 		},
@@ -333,10 +311,8 @@
 	const config2 = {
 		type: 'bar',
 		data: data2,
-		options: { maintainAspectRatio: false }
 	};
-</script>
-<script>
+
 	const myChart2 = new Chart(
 		document.getElementById('sensores'),
 		config2
@@ -344,22 +320,17 @@
 
 </script>
 
-<!-- CHAMPION -->
+<!-- CHAMPIGNON -->
+
 <script>
-	/* Umidade  */
-	const labels3 = [
-		'12:00',
-		'13:00',
-		'14:00',
-		'15:00',
-		'16:00',
-		'17:00',
-	];
+	
+	// Umidade
+	
 	const data3 = {
-		labels: labels,
+		labels: labels_horas,
 		datasets: [{
-			label: 'championUmidade',
-			backgroundColor: '#24202000',
+			label: 'Umidade',
+			backgroundColor: 'transparent',
 			borderColor: '#0774ea',
 			data: [35, 35, 60, 67, 30, 85],
 		}]
@@ -368,33 +339,21 @@
 	const config3 = {
 		type: 'line',
 		data: data3,
-		options: { maintainAspectRatio: false }
 	};
-</script>
 
-<script>
 	const myChart3 = new Chart(
-		document.getElementById('championUmidade'),
+		document.getElementById('champignonUmidade'),
 		config3
 	);
-</script>
 
-<!-- Temperatura -->
-<script>
-	const labels4 = [
-		'12:00',
-		'13:00',
-		'14:00',
-		'15:00',
-		'16:00',
-		'17:00',
-	];
+	// Temperatura
+	
 	const data4 = {
-		labels: labels4,
+		labels: labels_horas,
 		datasets: [{
-			label: 'championTemperatura',
-			backgroundColor: '#24202000',
-			borderColor: 'rgb(255, 99, 132)',
+			label: 'Temperatura',
+			backgroundColor: 'transparent',
+			borderColor: '#ff6384',
 			data: [25, 16, 32, 26, 30, 23]
 		}]
 	};
@@ -402,41 +361,26 @@
 	const config4 = {
 		type: 'line',
 		data: data4,
-		options: { maintainAspectRatio: false }
 	};
-</script>
 
-<script>
 	const myChart4 = new Chart(
-		document.getElementById('championTemperatura'),
+		document.getElementById('champignonTemperatura'),
 		config4
 	);
-</script>
 
-
-
-<!-- sensores -->
-<script>
-	const labels5 = [
-		'Janeiro',
-		'Fevereiro',
-		'Março',
-		'Abril',
-		'Maio',
-		'Junho',
-	];
+	// Sensores
 
 	const data5 = {
-		labels: labels5,
+		labels: labels_meses,
 		datasets: [{
-			label: ' championTemperatura',
-			backgroundColor: 'rgb(255, 99, 132)',
-			borderColor: 'rgb(255, 99, 132)',
+			label: 'Temperatura',
+			backgroundColor: '#ff6384',
+			borderColor: '#ff6384',
 			data: [25, 16, 32, 26, 30, 23]
 
 		},
 		{
-			label: ' championUmidade',
+			label: 'Umidade',
 			backgroundColor: '#0774ea',
 			borderColor: '#0774ea',
 			data: [35, 35, 60, 67, 30, 85],
@@ -446,34 +390,26 @@
 	const config5 = {
 		type: 'bar',
 		data: data5,
-		options: {/*  maintainAspectRatio: false */ }
 	};
-</script>
-<script>
+
 	const myChart5 = new Chart(
-		document.getElementById('championSensores'),
+		document.getElementById('champignonSensores'),
 		config5
 	);
 
 </script>
 
-<!-- Trufa -->
+<!-- TRUFA -->
 
 <script>
-	/* Umidade  */
-	const labels6 = [
-		'12:00',
-		'13:00',
-		'14:00',
-		'15:00',
-		'16:00',
-		'17:00',
-	];
+	
+	// Umidade
+	
 	const data6 = {
-		labels: labels6,
+		labels: labels_horas,
 		datasets: [{
-			label: 'trufaUmidade',
-			backgroundColor: '#24202000',
+			label: 'Umidade',
+			backgroundColor: 'transparent',
 			borderColor: '#0774ea',
 			data: [20, 50, 45, 60, 80, 15],
 		}]
@@ -482,33 +418,21 @@
 	const config6 = {
 		type: 'line',
 		data: data6,
-		options: { maintainAspectRatio: false }
 	};
-</script>
 
-<script>
 	const myChart6 = new Chart(
 		document.getElementById('trufaUmidade'),
 		config6
 	);
-</script>
 
-<!-- Temperatura -->
-<script>
-	const labels7 = [
-		'12:00',
-		'13:00',
-		'14:00',
-		'15:00',
-		'16:00',
-		'17:00',
-	];
+	// Temperatura
+	
 	const data7 = {
-		labels: labels7,
+		labels: labels_horas,
 		datasets: [{
-			label: 'trufaTemperatura',
-			backgroundColor: '#24202000',
-			borderColor: 'rgb(255, 99, 132)',
+			label: 'Temperatura',
+			backgroundColor: 'transparent',
+			borderColor: '#ff6384',
 			data: [23, 15, 35, 24, 12, 23]
 		}]
 	};
@@ -516,41 +440,26 @@
 	const config7 = {
 		type: 'line',
 		data: data7,
-		options: { maintainAspectRatio: false }
 	};
-</script>
 
-<script>
 	const myChart7 = new Chart(
 		document.getElementById('trufaTemperatura'),
 		config7
 	);
-</script>
 
-
-
-<!-- sensores -->
-<script>
-	const labels8 = [
-		'Janeiro',
-		'Fevereiro',
-		'Março',
-		'Abril',
-		'Maio',
-		'Junho',
-	];
+	// Sensores
 
 	const data8 = {
-		labels: labels8,
+		labels: labels_meses,
 		datasets: [{
-			label: 'trufaTemperatura ',
-			backgroundColor: 'rgb(255, 99, 132)',
-			borderColor: 'rgb(255, 99, 132)',
+			label: 'Temperatura',
+			backgroundColor: '#ff6384',
+			borderColor: '#ff6384',
 			data: [23, 15, 35, 24, 12, 23]
 
 		},
 		{
-			label: 'trufaUmidade ',
+			label: 'Umidade',
 			backgroundColor: '#0774ea',
 			borderColor: '#0774ea',
 			data: [20, 50, 45, 60, 80, 15]
@@ -560,10 +469,8 @@
 	const config8 = {
 		type: 'bar',
 		data: data8,
-		options: { maintainAspectRatio: false }
 	};
-</script>
-<script>
+
 	const myChart8 = new Chart(
 		document.getElementById('trufaSensores'),
 		config8
@@ -571,23 +478,17 @@
 
 </script>
 
-<!-- ostra -->
+<!-- OSTRA -->
 
 <script>
-	/* Umidade  */
-	const labels9 = [
-		'12:00',
-		'13:00',
-		'14:00',
-		'15:00',
-		'16:00',
-		'17:00',
-	];
+
+	// Umidade
+	
 	const data9 = {
-		labels: labels9,
+		labels: labels_horas,
 		datasets: [{
-			label: 'ostraUmidade',
-			backgroundColor: '#24202000',
+			label: 'Umidade',
+			backgroundColor: 'transparent',
 			borderColor: '#0774ea',
 			data: [15, 45, 55, 60, 70, 80],
 		}]
@@ -596,33 +497,21 @@
 	const config9 = {
 		type: 'line',
 		data: data9,
-		options: { maintainAspectRatio: false }
 	};
-</script>
 
-<script>
 	const myChart9 = new Chart(
 		document.getElementById('ostraUmidade'),
 		config9
 	);
-</script>
 
-<!-- Temperatura -->
-<script>
-	const labels10 = [
-		'12:00',
-		'13:00',
-		'14:00',
-		'15:00',
-		'16:00',
-		'17:00',
-	];
+	// Temperatura
+	
 	const data10 = {
-		labels: labels10,
+		labels: labels_horas,
 		datasets: [{
-			label: 'ostraTemperatura',
-			backgroundColor: '#24202000',
-			borderColor: 'rgb(255, 99, 132)',
+			label: 'Temperatura',
+			backgroundColor: 'transparent',
+			borderColor: '#ff6384',
 			data: [15, 25, 35, 25, 15, 25]
 		}]
 	};
@@ -630,41 +519,26 @@
 	const config10 = {
 		type: 'line',
 		data: data10,
-		options: { maintainAspectRatio: false }
 	};
-</script>
 
-<script>
 	const myChart10 = new Chart(
 		document.getElementById('ostraTemperatura'),
 		config10
 	);
-</script>
 
-
-
-<!-- sensores -->
-<script>
-	const labels11 = [
-		'Janeiro',
-		'Fevereiro',
-		'Março',
-		'Abril',
-		'Maio',
-		'Junho',
-	];
+	// Sensores
 
 	const data11 = {
-		labels: labels11,
+		labels: labels_meses,
 		datasets: [{
-			label: 'ostraTemperatura',
-			backgroundColor: 'rgb(255, 99, 132)',
-			borderColor: 'rgb(255, 99, 132)',
+			label: 'Temperatura',
+			backgroundColor: '#ff6384',
+			borderColor: '#ff6384',
 			data: [15, 25, 35, 25, 15, 25]
 
 		},
 		{
-			label: 'ostraUmidade ',
+			label: 'Umidade',
 			backgroundColor: '#0774ea',
 			borderColor: '#0774ea',
 			data: [15, 45, 55, 60, 70, 80],
@@ -674,10 +548,8 @@
 	const config11 = {
 		type: 'bar',
 		data: data11,
-		options: { maintainAspectRatio: false }
 	};
-</script>
-<script>
+
 	const myChart11 = new Chart(
 		document.getElementById('ostraSensores'),
 		config11
@@ -685,23 +557,17 @@
 
 </script>
 
-<!-- shitake -->
+<!-- SHITAKE -->
 
 <script>
-	/* Umidade  */
-	const labels12 = [
-		'12:00',
-		'13:00',
-		'14:00',
-		'15:00',
-		'16:00',
-		'17:00',
-	];
+
+	// Umidade
+	
 	const data12 = {
-		labels: labels12,
+		labels: labels_horas,
 		datasets: [{
-			label: 'shitakeUmidade',
-			backgroundColor: '#24202000',
+			label: 'Umidade',
+			backgroundColor: 'transparent',
 			borderColor: '#0774ea',
 			data: [80, 70, 60, 50, 40, 30],
 		}]
@@ -710,33 +576,21 @@
 	const config12 = {
 		type: 'line',
 		data: data12,
-		options: { maintainAspectRatio: false }
 	};
-</script>
 
-<script>
 	const myChart12 = new Chart(
 		document.getElementById('shitakeUmidade'),
 		config12
 	);
-</script>
 
-<!-- Temperatura -->
-<script>
-	const labels13 = [
-		'12:00',
-		'13:00',
-		'14:00',
-		'15:00',
-		'16:00',
-		'17:00',
-	];
+	// Temperatura
+
 	const data13 = {
-		labels: labels13,
+		labels: labels_horas,
 		datasets: [{
-			label: 'shitakeTemperatura',
-			backgroundColor: '#24202000',
-			borderColor: 'rgb(255, 99, 132)',
+			label: 'Temperatura',
+			backgroundColor: 'transparent',
+			borderColor: '#ff6384',
 			data: [15, 20, 25, 27, 30, 35]
 		}]
 	};
@@ -744,41 +598,26 @@
 	const config13 = {
 		type: 'line',
 		data: data13,
-		options: { maintainAspectRatio: false }
 	};
-</script>
 
-<script>
 	const myChart13 = new Chart(
 		document.getElementById('shitakeTemperatura'),
 		config13
 	);
-</script>
 
-
-
-<!-- sensores -->
-<script>
-	const labels14 = [
-		'Janeiro',
-		'Fevereiro',
-		'Março',
-		'Abril',
-		'Maio',
-		'Junho',
-	];
+	// Sensores
 
 	const data14 = {
-		labels: labels14,
+		labels: labels_meses,
 		datasets: [{
-			label: 'shitakeTemperatura',
-			backgroundColor: 'rgb(255, 99, 132)',
-			borderColor: 'rgb(255, 99, 132)',
+			label: 'Temperatura',
+			backgroundColor: '#ff6384',
+			borderColor: '#ff6384',
 			data: [15, 20, 25, 27, 30, 35]
 
 		},
 		{
-			label: 'shitakeUmidade ',
+			label: 'Umidade',
 			backgroundColor: '#0774ea',
 			borderColor: '#0774ea',
 			data: [80, 70, 60, 50, 40, 30],
@@ -788,10 +627,8 @@
 	const config14 = {
 		type: 'bar',
 		data: data14,
-		options: { maintainAspectRatio: false }
 	};
-</script>
-<script>
+
 	const myChart14 = new Chart(
 		document.getElementById('shitakeSensores'),
 		config14
