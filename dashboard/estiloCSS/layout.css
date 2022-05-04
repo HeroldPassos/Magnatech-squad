@@ -153,7 +153,7 @@ body {
 .banner {
     background-color: rgba(247, 199, 199, 0.897);
     height: 100%;
-    width: 75%;
+    width: 90%;
     align-items: center;
     display: flex;
     margin: auto;
@@ -205,3 +205,32 @@ body {
     position: relative;
 }
 /* inicio do grafico */
+ .dash-header h1 {
+    text-align: center;
+}
+.btn-dash{
+    margin-top: 35px;
+    display: flex;
+
+}
+
+.btn-chart{
+    width: 15%;
+}
+.div3{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.div1{
+    margin-top: 150px ;
+}
+
+
+.grafico{
+    width: 38vw;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    
+}

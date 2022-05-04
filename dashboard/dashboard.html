@@ -50,116 +50,194 @@
 			<div class="card">
 				<div class="dash-header">
 					<div class="btn-dash">
-						<img src="imgs/shimeji.png" onclick="shimeji()" class="btn-chart">Shimeji</img src="">
-						<img src="imgs/champignon.png" onclick="champignon()" class="btn-chart">Champignon</img src="">
-						<img src="imgs/trufa-branca.png" onclick="trufa()" class="btn-chart">Trufa</img src="">
-						<img src="imgs/ostra-rosa.png" onclick="ostra()" class="btn-chart">Ostra-Rosa</img src="">
-						<img src="imgs/shitake.png" onclick="shitake()" class="btn-chart">Shitake</img src="">
+						<img src="imgs/shimeji.png" onclick="shimeji()" class="btn-chart">Shimeji 
+						<img src="imgs/champignon.png" onclick="champignon()" class="btn-chart">Champignon
+						<img src="imgs/trufa-branca.png" onclick="trufa()" class="btn-chart">Trufa
+						<img src="imgs/ostra-rosa.png" onclick="ostra()" class="btn-chart">Ostra-Rosa
+						<img src="imgs/shitake.png" onclick="shitake()" class="btn-chart">Shitake
 					</div>
 					
 					<!-- começo do Shimeji -->
-					<div id="div_shimeji" style="display:block;">
 
+					<div id="div_shimeji" style="display:block;">
 						<h1>Shimeji</h1>
-						<section>
-							<h3>Sensores</h3>
-							<canvas id="sensores"></canvas>
-						</section>
-						<section>
-							<h3> Umidade</h3>
-							<canvas id="Umidade"></canvas>
-						</section>
-						<section>
-							<h3>Temperatura</h3>
-							<canvas id="Temperatura"></canvas>
-						</section>
+						<div class="div3">
+
+							<div class="div1">
+								<section>
+									<div class="grafico">
+										<h3>Sensores</h3>
+										<canvas id="sensores"></canvas>
+									</div>
+								</section>
+							</div>
+							<div class="div2">
+
+								<section>
+									<div class="grafico">
+										<h3> Umidade</h3>
+										<canvas id="Umidade"></canvas>
+
+									</div>
+								</section>
+								<section>
+									<div class="grafico">
+										<h3>Temperatura</h3>
+										<canvas id="Temperatura"></canvas>
+
+									</div>
+								</section>
+
+							</div>
+
+						</div>
 
 					</div>
-					
 					<!-- final do Shimeji -->
 
 					<!-- começo do Champignon  -->
 					<div id="div_champignon" style="display:none;">
-						
 						<h1>Champignon</h1>
-						<section>
-							<h3>Sensores</h3>
-							<canvas id="champignonSensores"></canvas>
-						</section>
-					
-						<section>
-							<h3> Umidade</h3>
-							<canvas  id="champignonUmidade"></canvas>
-						</section>
-						<section>
-							<h3>Temperatura</h3>
-							<canvas  id="champignonTemperatura"></canvas>
-						</section>
+						<div class="div3">
+
+							<div class="div1">
+								<section>
+									<div class="grafico">
+										<h3>Sensores</h3>
+										<canvas id="champignonSensores"></canvas>
+									</div>
+								</section>
+							</div>
+
+							<div class="div2">
+
+								<section>
+									<div class="grafico">
+										<h3> Umidade</h3>
+										<canvas id="champignonUmidade"></canvas>
+									</div>
+								</section>
+								<section>
+									<div class="grafico">
+										<h3>Temperatura</h3>
+										<canvas id="champignonTemperatura"></canvas>
+									</div>
+								</section>
+							</div>
+						</div>
 
 					</div>
-					
+
 					<!-- final do Champignon -->
 
 					<!-- começo da Trufa -->
 					<div id="div_trufa" style="display:none;">
-						
 						<h1>Trufa</h1>
-						<section>
-							<h3>Sensores</h3>
-							<canvas id="trufaSensores"></canvas>
-						</section>
-						<section>
-							<h3> Umidade</h3>
-							<canvas id="trufaUmidade"></canvas>
-						</section>
-						<section>
-							<h3>Temperatura</h3>
-							<canvas id="trufaTemperatura"></canvas>
-						</section>
-						
+
+						<div class="div3">
+							<div class="div1">
+								<section>
+									<div class="grafico">
+										<h3>Sensores</h3>
+										<canvas id="trufaSensores"></canvas>
+									</div>
+								</section>
+							</div>
+							<div class="div2">
+								<section>
+									<div class="grafico">
+										<h3> Umidade</h3>
+										<canvas id="trufaUmidade"></canvas>
+
+									</div>
+								</section>
+								<section>
+									<div class="grafico">
+										<h3>Temperatura</h3>
+										<canvas id="trufaTemperatura"></canvas>
+									</div>
+								</section>
+							</div>
+
+
+						</div>
 					</div>
-					<!-- final da Trufa -->
+						<!-- final da Trufa -->
+
 
 					<!-- começo da Ostra -->
 					<div id="div_ostra" style="display:none;">
-						
 						<h1>Ostra</h1>
-						<section>
-							<h3>Sensores</h3>
-							<canvas id="ostraSensores"></canvas>
-						</section>
-						<section>
-							<h3> Umidade</h3>
-							<canvas id="ostraUmidade"></canvas>
-						</section>
-						<section>
+						<div class="div3">
+
+							<div class="div1">
+								<section>
+									<div class="grafico">
+										<h3>Sensores</h3>
+										<canvas id="ostraSensores"></canvas>
+
+									</div>
+								</section>
+							</div>
+							<div class="div2">
+								<section>
+									<div class="grafico">
+										<h3> Umidade</h3>
+										<canvas id="ostraUmidade"></canvas>
+									</div>
+								</section>
+								<section>
+						<div class="grafico">
 							<h3>Temperatura</h3>
 							<canvas id="ostraTemperatura"></canvas>
-						</section>
-						
+						</div>
+								</section>
+							</div>
+							
+
+						</div>
 					</div>
 					<!-- final da Ostra -->
 
 					<!-- começo do Shitake -->
 					<div id="div_shitake" style="display:none;">
-						
 						<h1>Shitake</h1>
-						<section>
-							<h3>Sensores</h3>
-							<canvas id="shitakeSensores"></canvas>
-						</section>
-						<section>
-							<h3> Umidade</h3>
-							<canvas id="shitakeUmidade"></canvas>
-						</section>
-						<section>
-							<h3>Temperatura</h3>
-							<canvas id="shitakeTemperatura"></canvas>
-						</section>
+						
+						<div class="div3">
+						
+							<div class="div1">
+							<section>
+									<div class="grafico">
+										<h3>Sensores</h3>
+										<canvas id="shitakeSensores"></canvas>
+									</div>
+								</section>
+							</div>
+							
+							<div class="div2">
+
+								<section>
+								<div class="grafico">
+									<h3> Umidade</h3>
+									<canvas id="shitakeUmidade"></canvas>
+								</div>
+								</section>
+								<section>
+
+									<div class="grafico">
+										<h3>Temperatura</h3>
+										<canvas id="shitakeTemperatura"></canvas>
+									</div>
+								</section>
+
+							</div>
+
+
+						</div>
 						
 					</div>
 					<!-- final do Shitake -->
-					
+
 				</div>
 			</div>
 		</div>
@@ -246,48 +324,124 @@
 
 	// Umidade
 
-	const data0 = {
-		labels: labels_horas,
-		datasets: [{
-			label: 'Umidade',
-			backgroundColor: 'transparent',
-			borderColor: '#0774ea',
-			data: [55, 30, 97, 60, 30, 55],
-		}]
-	};
-
-	const config0 = {
-		type: 'line',
-		data: data0,
-	};
-
-	const myChart0 = new Chart(
-		document.getElementById('Umidade'),
-		config0
+	var contextoDht11Umidade = document.getElementById('Umidade').getContext('2d');
+	var Umidade = new Chart(
+		contextoDht11Umidade,
+		{
+			type: 'line',
+			data: {
+				datasets: [{
+					label: 'Umidade',
+					type: 'line',
+					borderColor: '#0774ea',
+					backgroundColor: 'transparent',
+				}]
+			},
+			options: {
+				scales: {
+					xAxes: [{
+						distribution: 'series',
+						ticks: {
+							beginAtZero: true
+						}
+					}],
+					yAxes: [{
+						scaleLabel: {
+							display: true,
+							labelString: 'Umidade'
+						},
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				},
+				animation: {
+					duration: 0
+				}
+			}
+		}
 	);
+
+	// const data0 = {
+	// 	labels: labels_horas,
+	// 	datasets: [{
+	// 		label: 'Umidade',
+	// 		backgroundColor: 'transparent',
+	// 		borderColor: '#0774ea'/*,
+	// 		data: [55, 30, 97, 60, 30, 55],*/
+	// 	}]
+	// };
+
+	// const config0 = {
+	// 	type: 'line',
+	// 	data: data0,
+	// };
+
+	// const myChart0 = new Chart(
+	// 	document.getElementById('Umidade'),
+	// 	config0
+	// );
 
 	// Temperatura
 
-	const data1 = {
-		labels: labels_horas,
-		datasets: [{
-			label: 'Temperatura',
-			backgroundColor: 'transparent',
-			borderColor: '#ff6384',
-			data: [35, 15, 19, 24, 29, 23]
-		}]
-	};
-
-	const config1 = {
-		type: 'line',
-		data: data1,
-		
-	};
-
-	const myChart1 = new Chart(
-		document.getElementById('Temperatura'),
-		config1
+	var contextoDht11Temperatura = document.getElementById('Temperatura').getContext('2d');
+	var Temperatura = new Chart(
+		contextoDht11Temperatura,
+		{
+			type: 'line',
+			data: {
+				datasets: [{
+					label: 'Temperatura',
+					type: 'line',
+					borderColor: '#ff6384',
+					backgroundColor: 'transparent',
+				}]
+			},
+			options: {
+				scales: {
+					xAxes: [{
+						distribution: 'series',
+						ticks: {
+							beginAtZero: true
+						}
+					}],
+					yAxes: [{
+						scaleLabel: {
+							display: true,
+							labelString: 'Temperatura'
+						},
+						ticks: {
+							beginAtZero: true
+						}
+					}]
+				},
+				animation: {
+					duration: 0
+				}
+			}
+		}
 	);
+
+	// const data1 = {
+	// 	labels: labels_horas,
+	// 	datasets: [{
+	// 		label: 'Temperatura',
+	// 		backgroundColor: 'transparent',
+	// 		borderColor: '#ff6384'/*,
+	// 		data: [35, 15, 19, 24, 29, 23]*/
+	// 	}]
+	// };
+
+	// const config1 = {
+	// 	type: 'line',
+	// 	data: data1,
+		
+	// };
+
+	// const myChart1 = new Chart(
+	// 	document.getElementById('Temperatura'),
+	// 	config1
+	// );
 
 	// Sensores
 
@@ -633,5 +787,49 @@
 		document.getElementById('shitakeSensores'),
 		config14
 	);
+
+</script>
+
+<script>
+
+	var paginacao = {};
+	var tempo = {};
+	function obterDados(grafico, endpoint) {
+		var http = new XMLHttpRequest();
+		http.open('GET', 'http://localhost:3000/sensores/' + endpoint, false);
+		http.send(null);
+		var valores = JSON.parse(http.responseText);
+		if (paginacao[endpoint] == null) {
+			paginacao[endpoint] = 0;
+		}
+		if (tempo[endpoint] == null) {
+			tempo[endpoint] = 0;
+		}
+		// Exibir à partir do último elemento exibido anteriormente
+		var ultimaPaginacao = paginacao[endpoint];
+		paginacao[endpoint] = valores.length;
+		var valores = valores.slice(ultimaPaginacao);
+		valores.forEach((valor) => {
+			//Máximo de 60 itens exibidos no gráfico
+			if (grafico.data.labels.length == 10 && grafico.data.datasets[0].data.length == 10) {
+				grafico.data.labels.shift();
+				grafico.data.datasets[0].data.shift();
+			}
+
+			grafico.data.labels.push(tempo[endpoint]++);
+			grafico.data.datasets[0].data.push(parseFloat(valor));
+				grafico.update();
+			
+			
+
+		})
+	}
+
+	
+
+	setInterval(() => {
+		obterDados(Umidade, 'dht11/umidade');
+		obterDados(Temperatura, 'dht11/temperatura');
+	})
 
 </script>
