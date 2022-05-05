@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador Financeiro</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+
+    <div class="header">
+		<div class="container">
+			<a href="index.html">
+                <img src="Untitled.png">
+			</a>
+
+			<ul class="navbar">
+				<li><a class="nav-itens" href="index.html">Inicio</a></li>
+				<li><a class="nav-itens" href="">Sobre nós</a></li>
+				<li><a class="nav-itens" href="agendamento.html">Agendamento</a></li>
+			</ul>
+            <a class="nav-btn nav-btn-ativo" href="calculadora.html">Simulador Financeiro</a>
+
+			<div class="login">
+				<ul class="usuario">
+					<li> <a class="nav-itens" href="login.html">Login</a></li>
+					|
+					<li> <a class="nav-itens" href="cadastro.html">Cadastro</a> </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+    
+        
+     <h2 class="titulo1">CALCULADORA FINANCEIRA</h2>
+
+     <div class="div1" style="background-color: white; width: 50%;">
+
+                    <p class="texto2" style="font-size: 120%;">Segundo dados da ONU Verde, no Brasil, cerca de 10% do desperdício de alimentos 
+                        <br> ocorre logo durante sua produção e colheita, desperdício este que,
+                        <br> segundo os Objetivos de Desenvolvimento Sustentável (ODS) da ONU 
+                        <br> deve ser reduzido pela metade até 2030. </p>
+
+                    <p class="texto2" style="font-size: 120%">Embora já seja comum o uso de sensores para o monitoramento de produtos armazenados, 
+                       <br> nós da MagnaTech enxergamos que o monitoramento das condições
+                       <br> do ambiente durante o período de crescimento da planta também é de extrema importância,
+                       <br> visto que um crescimento mais saudável da planta auxiliaria
+                       <br> consideravelmente em sua vida útil e potencial nutritivo. </p>
+
+                    <p class="texto2" style="font-size: 120%;">Considerando esses dois pontos e buscando facilitar a visualização dos mesmos, nós
+                        <br> disponibilizamos um simulador que mostra o desperdício atual da colheita
+                        <br> e o quanto este desperdício pode ser reduzido com o uso de nossos sensores de monitoramento
+                        <br> e um sistema de controle de temperatura e umidade integrado a eles. </p>
+                </div>
+                <div class="div2">
+
+                    <p>
+                        Informe a unidade de medida utilizada:
+                        <select id="sel_medida" onchange="escolheMedida()">
+                            <option value="1">Quilogramas (1kg)</option>
+                            <option value="15">Arrobas (15kg)</option>
+                            <option value="60">Sacas (60kg)</option>
+                            <option value="1000">Toneladas (1000kg)</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        Informe a quantidade média produzida por mês (considerando também o que é descartado): <br>
+                        <input placeholder="Quilogramas produzidos" id="in_producao">
+                    </p>
+
+                    <p>
+                        Informe o valor médio por mês que é obtido pela empresa, em reais: <br>
+                        <input placeholder="Venda" id="in_venda">
+                    </p>
+
+                    <p>
+                        Informe a quantidade perdida durante o plantio (em %): <br>
+                        <input placeholder="Desperdício" id="in_desperdicio">
+                    </p>
+
+                    <button onclick="resultado()">Ver resultado</button>
+
+                    <div id="div_desperdicio" style="display: none;">
+
+                        <p>Seu desperdício médio mensal é de <b id="b_desperdicio_venda"></b> e, com isso, sua
+                            empresa <br>
+                            acaba perdendo cerca de <b id="b_desperdicio_dinheiro"></b> dos <b
+                                id="b_total_dinheiro"></b> que poderia lucrar.</p>
+
+                        <p style="font-weight: bold;">Agora calcule como seria com um monitoramento em sua
+                            plantação:</p>
+
+                        <p>
+                            Informe o tamanho da área de plantio, em m²: <br>
+                            <input placeholder="Área" id="in_area">
+                        </p>
+
+                        <button onclick="calculo()">Calcular</button>
+
+                    </div>
+                    <div id="div_calculo" style="display: none;">
+
+                        <p>
+                            Ao aderir à um sistema de monitoramento adequado, haveria um diminuição de cerca de <b
+                                id="b_taxa_economia"></b> na taxa de alimentos desperdiçados, <br>
+                            gerando <b id="b_lucro_total"></b>, um aumento de <b id="b_lucro_parcial"></b> quando
+                            comparado ao valor atual das vendas
+                        </p>
+                        <p>
+                            Tudo isso sendo necessária apenas a instalação de <b id="b_sensores"></b> sensores,
+                            trazendo um custo de apenas <b id="b_sensores_custo"></b> em equipamentos para o
+                            monitoramento <br>
+                            da temperatura e umidade.
+                        </p>
+
+                    </div>
+
+                
+
+
+    
+    <!--Inicio Rodape-->
+    <div class="baseboard">
+        <div class="container">
+            <div class="info">
+                <p>
+                    alguma coisa
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    var medida = Number(sel_medida.value)
+    var medida_nome = "Quilogramas"
+    var venda
+    var producao
+    var desperdicio
+    var venda_total
+    var venda_desperdicio
+
+    function escolheMedida() {
+
+        medida = Number(sel_medida.value)
+
+        if (medida == 1) {
+            medida_nome = "Quilogramas"
+        }
+        if (medida == 15) {
+            medida_nome = "Arrobas"
+        }
+        if (medida == 60) {
+            medida_nome = "Sacas"
+        }
+        if (medida == 1000) {
+            medida_nome = "Toneladas"
+        }
+
+        in_producao.placeholder = medida_nome + " produzidos"
+
+    }
+
+    function resultado() {
+
+
+        if (Number(in_desperdicio.value) < 100 && Number(in_desperdicio.value) >= 0 && Number(in_producao.value) > 0 && Number(in_venda.value) > 0) {
+
+            desperdicio = Number(in_desperdicio.value) / 100
+            producao = Number(in_producao.value)
+            venda = Math.round(Number(in_venda.value))
+            venda_total = venda / (1 - desperdicio)
+            venda_desperdicio = venda_total * desperdicio
+
+            b_desperdicio_venda.innerHTML = (producao * desperdicio).toFixed(0) + " " + medida_nome
+            b_desperdicio_dinheiro.innerHTML = "R$" + (Math.round(venda_desperdicio)).toFixed(2)
+            b_total_dinheiro.innerHTML = "R$" + (Math.round(venda_total)).toFixed(2)
+
+            div_desperdicio.style.display = "block"
+
+        } else {
+            alert("Insira um valor válido em todos os campos")
+        }
+
+    }
+
+    function calculo() {
+
+        if (in_area.value > 0) {
+
+            var economia = 0.3
+            var venda_aumento = Math.round(venda_desperdicio * economia)
+
+            var area = Number(in_area.value)
+            var sensores = Math.ceil(area / 100)
+
+            b_taxa_economia.innerHTML = economia * 100 + "%"
+            b_lucro_total.innerHTML = "R$" + (venda + venda_aumento).toFixed(2)
+            b_lucro_parcial.innerHTML = "R$" + (venda_aumento).toFixed(2)
+
+            b_sensores.innerHTML = sensores
+            b_sensores_custo.innerHTML = "R$" + (sensores * 120).toFixed(2)
+
+            div_calculo.style.display = "block"
+
+        } else {
+
+            alert("Insira um valor de área válido")
+
+        }
+
+    }
+
+</script>
