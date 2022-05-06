@@ -100,7 +100,15 @@ CREATE TABLE agendamento (
   PRIMARY KEY (idagendamento)
   )AUTO_INCREMENT= 10000;
 
-
+CREATE TABLE suporte (
+	idSuporte INT AUTO_INCREMENT,
+    fkFazenda INT,
+    FOREIGN KEY (fkFazenda)
+    REFERENCES Fazenda(idFazenda),
+    PRIMARY KEY (idSuporte, fkFazenda),
+    assunto VARCHAR(45),
+    descricao VARCHAR(300)
+);
 
 INSERT INTO agendamento ( nomeRepresentante, telefone, email,  agendamentoData, nomeEmpresa, cnpj, rua, bairro, complemento ) VALUES
 ('João Gomes','11968188554','fazenda1@gmail.com','2022-05-12','Nome fazenda1','07258852000118','Rua 1','Bairro 1','Em Frente a ultra gas'),
@@ -171,4 +179,32 @@ INSERT INTO captura( fkSensor, umidade, temperatura, momento) VALUES
 (5052202,80.5,25.55, '11-11-11 17-25-25'),
 (5052202,80.5,25.55, '11-11-11 18-25-25');
 
+INSERT INTO suporte (fkFazenda, assunto, descricao) VALUES
+(1, "titulo", "descrição do problema"),
+(1, "assunto", "detalhamento do erro"),
+(2, "duvida", "descrição da duvida relacionada ao assunto");
 
+
+SELECT * FROM fazenda 
+	where bairro = 'bairro 2';
+
+
+-- mostrar sensores pelos ID
+SELECT * FROM ARDUINO order by idsensor;
+
+
+
+-- mostrar fazenda relacionado os funcionarios
+SELECT * FROM fazenda, funcionario 
+	WHERE fkFazenda = idFazenda;
+    
+    
+    SELECT * FROM fazenda, funcionario 
+	WHERE fkFazenda = idFazenda order by funcionario.nome;  
+    
+    
+    -- ordemado pelo momento de captura
+    SELECT * FROM arduino, captura
+	WHERE fkSensor = idsensor order by momento;
+    
+    
